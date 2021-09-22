@@ -1,6 +1,6 @@
 # TESTE DEV ÓRIGO
 
-tive dificuldade para o container funcionar, e mostra apenas a página principal, não navega pelas outras páginas
+tive dificuldade para o container funcionar, e mostra apenas a página principal, não navega pelas outras páginas, tenho alguns containers com VueJS funcionando, mas foi a primeira tentativa de por Angular num container, ainda vou tentar resolver
 
 entre na pasta do frontend
 `ng serve`
