@@ -1,0 +1,43 @@
+version: '3.7'
+
+services:
+  nginx:
+    container_name: nginx
+    build: build/nginx
+    command: nginx -g "daemon off;"
+    links:
+      - php
+    ports:
+      - '8280:80'
+    networks:
+      - personal
+
+  php:
+    container_name: php
+    build: build/php
+    volumes:
+      - ./backend:/var/www/html
+    working_dir: /var/www/html
+    command: php-fpm
+    ports:
+      - '9000:9000'
+    networks:
+      - personal
+
+  frontend:
+    build: ./frontend
+    container_name: origo-frontend
+    ports:
+      - 8080:80
+    working_dir: /app
+    volumes:
+      - ./frontend:/app
+    networks:
+      - personal
+    depends_on:
+      - php
+
+networks:
+  personal:
+    external:
+      name: personal
