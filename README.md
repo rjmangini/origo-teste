@@ -7,9 +7,9 @@ entre na pasta do frontend
 
 entre na pasta do backend - configurar o banco no .env
 
-    - `php artisan migrate`
-    - `php artisan db:seed`
-    - `php artisan serve`
+`php artisan migrate`
+`php artisan db:seed`
+`php artisan serve`
 
 ---
 
