@@ -3,6 +3,7 @@
 tive dificuldade para o container funcionar, e mostra apenas a página principal, não navega pelas outras páginas, tenho alguns containers com VueJS funcionando, mas foi a primeira tentativa de por Angular num container, ainda vou tentar resolver
 
 entre na pasta do frontend
+
 `ng serve`
 
 entre na pasta do backend - configurar o banco no .env
@@ -14,13 +15,3 @@ entre na pasta do backend - configurar o banco no .env
 `php artisan serve`
 
 ---
-
-1. Crie a rede do container
-   `docker network create personal`
-
-2. Baixe e configure o banco de dados
-   https://github.com/rjmangini/mariadb-container
-
-   `docker-compose up --build -d`
-
-3.
