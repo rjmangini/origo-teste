@@ -30,7 +30,7 @@ class CustomerController extends Controller
             ];
         }
 
-        return response()->json($result, $result['status']);
+        return response()->json($result['data'], $result['status']);
     }
 
     public function store(Request $request)
@@ -55,7 +55,7 @@ class CustomerController extends Controller
             ];
         }
 
-        return response()->json($result, $result['status']);
+        return response()->json($result['data'], $result['status']);
     }
 
     public function show($id)
@@ -71,7 +71,7 @@ class CustomerController extends Controller
             ];
         }
 
-        return response()->json($result, $result['status']);
+        return response()->json($result['data'], $result['status']);
     }
 
     public function update(Request $request, $id)
@@ -96,7 +96,7 @@ class CustomerController extends Controller
             ];
         }
 
-        return response()->json($result, $result['status']);
+        return response()->json($result['data'], $result['status']);
     }
 
     public function destroy($id)
@@ -112,7 +112,7 @@ class CustomerController extends Controller
             ];
         }
 
-        return response()->json($result, $result['status']);
+        return response()->json($result['data'], $resul['status']);
     }
 
 }
